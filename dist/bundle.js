@@ -284,7 +284,8 @@ const TESTNET_API_URL_MAP = {
   rinkeby: 'https://api-rinkeby.etherscan.io',
   homestead: 'https://api.etherscan.io',
   polygon: 'https://api.polygonscan.com',
-  fantom: 'https://api.ftmscan.com'
+  fantom: 'https://api.ftmscan.com',
+  base: 'https://api.basescan.org',
 };
 
 module.exports = function(chain, timeout) {
@@ -345,7 +346,7 @@ const account = require('./account');
 
 /**
  * @param {string} apiKey - (optional) Your Etherscan APIkey
- * @param {string} chain - (optional) Testnet chain keys [ropsten, rinkeby, kovan, polygon, fantom]
+ * @param {string} chain - (optional) Testnet chain keys [ropsten, rinkeby, kovan, polygon, fantom, base]
  * @param {number} timeout - (optional) Timeout in milliseconds for requests, default 10000
  */
 module.exports = function(apiKey, chain, timeout) {
